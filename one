@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Graph Paper</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars if not needed */
+  }
+
+  .graph-paper {
+    height: 100%;
+    width: 100%;
+    background-image:
+      repeating-linear-gradient(to right, #ccc 0 1px, transparent 1px 20px), /* Vertical lines */
+      repeating-linear-gradient(to bottom, #ccc 0 1px, transparent 1px 20px); /* Horizontal lines */
+    background-size: 20px 20px; /* Size of each grid cell */
+  }
+</style>
+</head>
+<body>
+  <div class="graph-paper"></div>
+</body>
+</html>
